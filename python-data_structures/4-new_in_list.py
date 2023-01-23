@@ -4,7 +4,7 @@ def new_in_list(my_list, idx, element):
         return my_list
     if idx > len(my_list) - 1:
         return my_list
-    for i in range(len(my_list)):
-        if new_in_list[i] == idx:
-            new_in_list = element
-            return new_in_list
+
+    if new_in_list[idx] == idx:
+        new_in_list = element
+        return new_in_list
