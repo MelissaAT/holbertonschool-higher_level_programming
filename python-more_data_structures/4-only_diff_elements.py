@@ -4,4 +4,3 @@ def only_diff_elements(set_1, set_2):
     b = set_2.difference(set_1)
 
     return (a.union(b))
-    
