@@ -3,15 +3,16 @@ def list_division(my_list_1, my_list_2, list_length):
     divisions = []
     for i in range(list_length):
         try:
-            if isinstance(my_list_1[i], (int, float)) and isinstance(my_list_2[i], (int, float)):
-                divisions.append(my_list_1[i] / my_list_2[i])
-            else:
-                print("wrong type")
-                divisions.append(0)
+             div = my_list_1[i] / my_list_2[i]
         except ZeroDivisionError:
             print("division by 0")
-            divisions.append(0)
+            div = 0
+        except TypeError:
+            print("wrong type")
+            div = 0
         except IndexError:
             print("out of range")
-            divisions.append(0)
-    return divisions
+            div = 0
+        finally:
+            new_list.append(div)
+    return new_list
