@@ -2,6 +2,7 @@
 """ Write a class that defines a squeare
 """
 
+
 class Square:
     """ Define a square
     """
