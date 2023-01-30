@@ -5,8 +5,10 @@
 
 class Square:
     """ class square has to be an int
-        area(self) returns the current square area 
+    area(self) returns the current square area 
     """
+
+
     def __init__(self, size=0):
         if type(size) != int:
             raise TypeError("size must be an integer")
