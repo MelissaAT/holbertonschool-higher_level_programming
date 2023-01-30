@@ -2,6 +2,6 @@
 """ My first class defines a square
 """
 class Square:
-    pass
-""" class Square is an empty class
+    """ class Square is an empty class
 """
+    pass
