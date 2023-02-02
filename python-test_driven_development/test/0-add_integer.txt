@@ -1,4 +1,4 @@
-The add_integer doctest
+The "add_integer" doctest
 ======================
 Tests the add_integer function from 0-add_integer
 for any edge cases that may break the functionality
