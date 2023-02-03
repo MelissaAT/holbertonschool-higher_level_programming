@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 """
+    Write a class Reactangle that defines a rectangle
+"""
+
+
+#!/usr/bin/python3
+"""
     Write a class Rectangle that defines a rectangle
 """
 
@@ -51,14 +57,3 @@ class Rectangle:
         if self.__height == 0:
             return 0
         return (2 * (self.__width + self.__height))
-
-    def __str__(self):
-        rectangle_print = ""
-        if self.__width < 0 or self.__height:
-            return 0
-        for i in range(self.__height):
-            if i != 0:
-                rectangle_print += "\n"
-            for j in range(self.__width):
-                rectangle_print += "#"
-        return rectangle_print
