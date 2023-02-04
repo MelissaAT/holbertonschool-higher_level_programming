@@ -53,9 +53,9 @@ class Rectangle:
         return (2 * (self.__width + self.__height))
 
     def __str__(self):
-        rectangle_print = ""
         if self.__width < 0 or self.__height:
             return ""
+        rectangle_print = ""
         for i in range(self.__height):
             if i != 0:
                 rectangle_print += "\n"
