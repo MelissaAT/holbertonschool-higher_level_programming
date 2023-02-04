@@ -7,6 +7,8 @@
 class Rectangle:
     """Class Rectangle defines width and height and raise exeptions
     """
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         if type(width) != int:
             raise TypeError("width must be an integer")
@@ -18,6 +20,7 @@ class Rectangle:
         elif height < 0:
             raise ValueError("height must be >= 0")
         self.__height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -68,4 +71,4 @@ class Rectangle:
 
     def __del__(self):
         print("Bye rectangle...")
-        Rectangle._instances -= 1
+        Rectangle.number_of_instances -= 1
