@@ -8,7 +8,6 @@ class Rectangle:
     """Class Rectangle defines width and height and raise exeptions
     """
     number_of_instances = 0
-    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         if type(width) != int:
@@ -64,7 +63,7 @@ class Rectangle:
             if i != 0:
                 rectangle_print += "\n"
             for j in range(self.__width):
-                rectangle_print += str(self.print_symbol)
+                rectangle_print += "#"
         return rectangle_print
 
     def __repr__(self):
