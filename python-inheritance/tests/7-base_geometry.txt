@@ -1,12 +1,11 @@
 The "7-base_geometry" doctest
-=============================
+========================
 Imports "BaseGeometry" class from "7-base_geometry"
-Tests the functionality of the "BaseGeometry" class
+Test integer_validator method
 
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 >>> bg = BaseGeometry()
-
 >>> bg.integer_validator("my_int", 12)
 >>> bg.integer_validator("width", 89)
 
