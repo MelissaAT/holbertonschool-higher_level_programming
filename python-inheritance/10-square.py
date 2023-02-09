@@ -40,7 +40,8 @@ class Square(Rectangle):
     """class square that inherits from rectangle"""
     def __init__(self, size):
         self.__size = size
-        super().integer_validator(self, "size", self.__size)
+        super().integer_validator("size", size)
+        super().__init__(size, size)
     
     def area(self):
         return self.__size * self.__size
