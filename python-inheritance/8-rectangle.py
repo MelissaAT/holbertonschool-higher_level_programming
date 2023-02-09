@@ -5,7 +5,7 @@ Write a class BaseGeometry
 """
 
 
-Rectangle = __import__('8-rectangle').Rectangle
+Rectangle = __import__('7-rectangle').Rectangle
 class Rectangle(BaseGeometry):
     """Write a class Rectangle that inherits from BaseGeometry"""
     def __init__(self, width, height):
