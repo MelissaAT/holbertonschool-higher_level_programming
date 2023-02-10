@@ -10,5 +10,5 @@ def read_file(filename=""):
     write a function that reads a text file 
     (UFT8) and prints it to stdout
     """
-    with open(filename="") as f:
-        lines = f.readlines()
+    with open(filename, encoding="uft-8") as f:
+        print(file.read())
