@@ -11,4 +11,4 @@ def read_file(filename=""):
     (UFT8) and prints it to stdout
     """
     with open(filename, encoding="uft-8") as f:
-        print(file.read())
+        print(f.read())
