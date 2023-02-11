@@ -20,6 +20,10 @@ class Student():
             return obj_dict
     
     def reload_from_json(self, json):
-        for key in json.keys():
-            if hasattr(self, key):
-                setattr(self, key, json[key])
+        for key, value in json.keys():
+            if key== "first_name":
+                self.firts_name = value
+            elif key == "last_name":
+                self.last_name = value
+            elif key == "age":
+                self.age = value
