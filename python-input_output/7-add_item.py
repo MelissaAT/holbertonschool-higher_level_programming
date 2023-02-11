@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""write a script that adds all arguments to a python"""
+"""
+write a script that adds all arguments to a python
+"""
 import json
 
 
