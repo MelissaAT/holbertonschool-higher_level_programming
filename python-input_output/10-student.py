@@ -19,5 +19,5 @@ class Student():
             attrs = dir(self)
         for i in attrs:
             if i in dir(self):
-                obj_dict[i] = getattr(self, attr)
+                obj_dict[i] = getattr(self, i)
             return obj_dict
