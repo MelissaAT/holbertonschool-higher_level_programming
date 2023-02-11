@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-write a script that adds all arguments to a python
+comment module json
 """
 import json
 
