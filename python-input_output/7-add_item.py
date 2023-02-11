@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-comment module json
+Script: comment module json
 """
 import json
 
