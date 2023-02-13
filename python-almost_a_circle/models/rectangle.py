@@ -19,12 +19,12 @@ class Rectangle(Base):
            raise ValueError("height must be > 0")
         self.__height = height
 
-        if x < 0:
+        if type(x) < 0:
            raise ValueError("x must be >= 0")
         else:
             self.__x = x
 
-        if y < 0:
+        if type(y) < 0:
             raise ValueError  ("y must be >= 0")
         
         self.__y = y
@@ -63,7 +63,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        if value < 0:
+        if type(value) < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
 
@@ -73,6 +73,6 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        if value < 0:
+        if type(value) < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
