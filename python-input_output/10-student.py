@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-"""comment module"""
-
-#!/usr/bin/python3
 """comment Mudoule"""
 
 
