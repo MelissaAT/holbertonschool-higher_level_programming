@@ -68,9 +68,9 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         if type(value) is not int:
-            TypeError("x must be an integer")
+            raise TypeError("x must be an integer")
         if value < 0:
-            ValueError("x must be > 0")
+            raise ValueError("x must be > 0")
         self.__x = value
 
     @property
