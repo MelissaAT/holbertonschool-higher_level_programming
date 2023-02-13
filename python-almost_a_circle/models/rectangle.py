@@ -83,7 +83,7 @@ class Rectangle(Base):
     def area(self):
         """Comment function"""
         return self.__width * self.__height
-    
+
     def display(self):
         """comment function display"""
         for i in range(self.height):
