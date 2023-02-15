@@ -32,18 +32,14 @@ class Square(Rectangle):
             if len(args) > 1:
                 self.width = args[1]
             if len(args) > 2:
-                self.height = args[2]
+                self.x = args[2]
             if len(args) > 3:
-                self.x = args[3]
-            if len(args) > 4:
-                self.y = args[4]
+                self.y = args[3]
         else:
             if 'id' in kwargs:
                 self.id = kwargs['id']
             if 'width' in kwargs:
                 self.width = kwargs['width']
-            if 'height' in kwargs:
-                self.height = kwargs['height']
             if 'x' in kwargs:
                 self.x = kwargs['x']
             if 'y' in kwargs:
