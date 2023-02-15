@@ -23,14 +23,14 @@ class Square(Rectangle):
     def __str__(self):
         """string representation of the square object"""
         return (f'[Square] ({self.id}) {self.x}/{self.y} - '
-                f'{self.width}')
+                f'{self.size}')
     
     def update(self, *args, **kwargs):
         """update the attributes of the square"""
         if args:
             self.id = args[0]
             if len(args) > 1:
-                self.width = args[1]
+                self.size = args[1]
             if len(args) > 2:
                 self.x = args[2]
             if len(args) > 3:
@@ -38,8 +38,8 @@ class Square(Rectangle):
         else:
             if 'id' in kwargs:
                 self.id = kwargs['id']
-            if 'width' in kwargs:
-                self.width = kwargs['width']
+            if 'size' in kwargs:
+                self.width = kwargs['size']
             if 'x' in kwargs:
                 self.x = kwargs['x']
             if 'y' in kwargs:
