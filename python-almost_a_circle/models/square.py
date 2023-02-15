@@ -25,4 +25,4 @@ class Square(Rectangle):
     def __str__(self):
         """string representation of the square object"""
         return (f'[Square] ({self.id}) {self.x}/{self.y} - '
-                f'{self.width}/{self.height}')
+                f'{self.width}')
