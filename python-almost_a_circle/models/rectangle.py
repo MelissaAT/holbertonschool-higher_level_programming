@@ -99,7 +99,7 @@ class Rectangle(Base):
         """comment function"""
         return (f'[Rectangle] ({self.id}) {self.x}/{self.y} - '
                 f'{self.width}/{self.height}')
-    
+
     def update(self, *args):
         """comment Function"""
         if args:
