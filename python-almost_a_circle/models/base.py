@@ -48,7 +48,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """This method first checks whether 
+        """This method first checks whether
         the class is Rectangle or Square"""
         if cls.__name__ == 'Rectangle':
             base_instance = cls(1, 1)
