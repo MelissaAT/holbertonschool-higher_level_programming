@@ -101,6 +101,7 @@ class Rectangle(Base):
                 f'{self.width}/{self.height}')
     
     def update(self, *args):
+        """comment Function"""
         if args:
             self.__id = args[0]
         if len(args) > 1:
