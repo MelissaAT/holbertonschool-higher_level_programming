@@ -3,7 +3,6 @@
 from models.rectangle import Rectangle
 
 
-
 class Square(Rectangle):
     """class square inherits from rectangle"""
     def __init__(self, size, x=0, y=0, id=None):
@@ -13,7 +12,6 @@ class Square(Rectangle):
     @property
     def size(self):
         """getter method for the size of the sqaure"""
-    
         return self.width
 
     @size.setter
