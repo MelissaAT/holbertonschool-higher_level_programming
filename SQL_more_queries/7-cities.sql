@@ -2,6 +2,9 @@
 
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 CREATE TABLE IF NOT EXISTS hbtn_0d_usa.cities (
-    id INT,
-    name VARCHAR(256) NOT NULL
-); 
+    id int serial DEFAULT value,
+    state_id int not null,
+    primary key (id),
+    foreign key (state_id) references states(id),
+    name VARCHAR(256) not null
+);
