@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Document module"""
+
+
 import MySQLdb
 from sys import argv
 
