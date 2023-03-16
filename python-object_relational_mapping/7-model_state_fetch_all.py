@@ -15,8 +15,6 @@ if __name__ == "__main__":
 
     engine = create_engine(db.format(username, password, database), pool_pre_ping=True)
 
-    Base.metadata.bind = engine
-
     Session = sessionmaker(bind=engine)
 
     #new session instance
@@ -27,5 +25,5 @@ if __name__ == "__main__":
 
     for state in states:
         print(f"{state.id}: {state.name}")
-    
+
     session.close
