@@ -22,7 +22,8 @@ if __name__ == "__main__":
     #new session instance
     session = Session()
 
-    states = session.query(State).all()
+    states = session.query(State).order_by(State.id.asc()).all()
+
 
     for state in states:
         print(f"{state.id}: {state.name}")
