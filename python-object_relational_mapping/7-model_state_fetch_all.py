@@ -20,10 +20,10 @@ if __name__ == "__main__":
     #new session instance
     session = Session()
 
-    states = session.query(State).all()
+    results = session.query(State).all()
 
 
-    for state in states:
-        print(f"{state.id}: {state.name}")
+    for states in results:
+        print(f"{states.id}: {states.name}")
 
     session.close
