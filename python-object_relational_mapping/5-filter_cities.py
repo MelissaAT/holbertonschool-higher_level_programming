@@ -30,8 +30,7 @@ if __name__ == '__main__':
 
     rows = cursor.fetchall()
 
-    for row in rows:
-        print(row)
+    print(", ".join([row[0] for row in rows]))
 
     cursor.close()
     db.close()
