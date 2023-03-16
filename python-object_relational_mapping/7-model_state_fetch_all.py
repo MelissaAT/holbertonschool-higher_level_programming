@@ -21,6 +21,7 @@ if __name__ == "__main__":
     session = Session()
 
     results = session.query(State).all()
+    print(results)
 
 
     for states in results:
