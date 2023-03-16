@@ -9,7 +9,7 @@ from model_state import Base, State
 
 if __name__ == "__main__":
     username = argv[1]
-    password = argv[1]
+    password = argv[2]
     database = argv[3]
     db = 'mysql+mysqldb://{}:{}@localhost/{}'
 
