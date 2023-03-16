@@ -25,6 +25,7 @@ if __name__ == "__main__":
 
 
     for states in results:
-        print(f"{states.id}: {states.name}")
+        idx = "{}:"
+        print(idx.format(states.id), states.name)
 
-    session.close
+    session.close()
