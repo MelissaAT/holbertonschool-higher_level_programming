@@ -20,8 +20,8 @@ if __name__ == '__main__':
         db=db_name
         )
     cursor = db.cursor()
-    query = "SELECT * FROM states WHERE\
-        BINARY name LIKE '{}'".format(state_name)
+    query = f"SELECT * FROM states WHERE\
+        BINARY name LIKE '{state_name}'"
     cursor.execute(query)
     rows = cursor.fetchall()
     for row in rows:
