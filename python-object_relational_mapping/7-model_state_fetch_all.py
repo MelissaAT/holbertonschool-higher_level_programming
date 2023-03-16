@@ -13,7 +13,7 @@ if __name__ == "__main__":
     database = argv[3]
     db = 'mysql+mysqldb://{}:{}@localhost/{}'
 
-    engine = create_engine(db.format(argv[1], argv[2], argv[3]), pool_pre_ping=True)
+    engine = create_engine(db.format(username, password, database), pool_pre_ping=True)
 
     Base.metadata.bind = engine
 
