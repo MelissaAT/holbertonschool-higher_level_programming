@@ -5,7 +5,7 @@ const args = process.argv;
 const size = parseInt(args[2]);
 
 if (isNaN(size)) {
-  console.log('Missin size');
+  console.log('Missing size');
 }
 const msg = 'X';
 
