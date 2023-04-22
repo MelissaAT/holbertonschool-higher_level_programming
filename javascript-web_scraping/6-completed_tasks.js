@@ -22,7 +22,7 @@ request(url, (error, response, body) => {
     const userIds = Object.keys(completedTasks);
     for (let i = 0; i < userIds.length; i++) {
       const userId = userIds[i];
-      console.log(`${userId}: ${completedTasks[userId]}`);
+      console.log(completedTasks);
     }
   }
 });
